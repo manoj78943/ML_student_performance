@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" type="text/css" href = "{% static 'student_analysis/css/style.css' %}" >
+</head>
+<body>
+<h1>WELCOME TO THE MACHINE LEARNING PROJECT</h1>
+<form id ="formid" action="result" method="post">
+    {% csrf_token %}
+    <div class="bigdiv1">
+        <div id="mark">
+            <label class ="mark1"><b>YOUR EXAM FULL MARKS</b></label><br>
+            <input id = "mark2" type="number" placeholder="Full Marks" name="fullmarks" required>
+        </div>
+        <div>
+            <label class ="mark1"><b>EXAM CUTOFF MARKS-</b></label><br>
+            <input id = "mark5" type="number" placeholder="Cutoff Marks" name="cutoff" required>
+        </div>
+        <div>
+            <label class ="mark1"><b>ENTER YOUR STUDY HOURS-</b></label><br>
+            <input id = "mark6" type="number" placeholder="Study Hours" name="username" required>
+        </div>
+        <div class ="btn">
+            <button class= "btn2" style="text-decoration: none" type="submit">SUBMIT</button>
+        </div>
+        <div>
+            <h5>{{ text4 }}</h5>
+            <h5>{{ text }}</h5>
+            <h5>{{ text3 }}</h5>
+            <h5>{{ text2 }}</h5>
+        </div>
+    </div>
+    <div class="bigdiv2">
+        <img id= "imgtag" src="{% static 'student_analysis/images/Figure1.png' %}" alt="Graph" width="30%">
+    </div>
+</form>
+
+
+</body>
+</html>

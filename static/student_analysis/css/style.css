@@ -1,0 +1,50 @@
+h1{
+text-align:center;
+background-color:yellow;
+margin-top:40px;
+}
+
+#formid{
+font-size:20px;}
+
+#mark2{
+height:20px;
+width:200px;
+}
+
+#mark5{
+height:20px;
+width:200px;
+}
+
+#mark6{
+height:20px;
+width:200px;
+}
+
+.btn2{
+background-color:green;
+color:red;
+height:30px;
+margin-top:15px}
+
+.bigdiv1{
+position: absolute;
+left: 10px;
+border: 3px solid #73AD21;
+padding: 10px;
+height:400px;
+width:600px;}
+
+.bigdiv2{
+position: absolute;
+right: 10px;
+padding: 10px;
+border: 3px solid #73AD21;
+height:400px;
+width:600px;}
+
+#imgtag{
+text-align:center;
+height:360px;
+width:590px;}
